@@ -106,5 +106,21 @@
         .then(reg => console.log('Service Worker Registered'))
         .catch(err => console.error('Service Worker Failed:', err));
     }
-  </script></body>
+  </script>
+<button id="installBtn" style="display: none;">تثبيت التطبيق</button>
+<script>
+  let deferredPrompt;
+  const btn = document.getElementById("installBtn");
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    btn.style.display = "block";
+
+    btn.addEventListener("click", () => {
+      btn.style.display = "none";
+      deferredPrompt.prompt();
+    });
+  });
+</script></body>
 </html>
