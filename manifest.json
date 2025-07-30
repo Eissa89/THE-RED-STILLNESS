@@ -1,0 +1,21 @@
+{
+  "name": "THE RED STILLNESS",
+  "short_name": "Red Stillness",
+  "description": "خطة الحرب النفسية - 33 استراتيجية في 33 يومًا",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1B0C1A",
+  "background_color": "#1B0C1A",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgZmlsbD0iIzFGMEMxQSIvPjx0ZXh0IHg9Ijk2IiB5PSIxMDAiIGZvbnQtc2l6ZT0iMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGQURDMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCI+5LiN5YiwPC90ZXh0Pjwvc3ZnPg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0iIzFGMEMxQSIvPjx0ZXh0IHg9IjI1NiIgeT0iMjgwIiBmb250LXNpemU9IjQ4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjRkFEQzA1IiBmb250LWZhbWlseT0iQXJpYWwiPuS4jeWIsDwvdGV4dD48L3N2Zz4=",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

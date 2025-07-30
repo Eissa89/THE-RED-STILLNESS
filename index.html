@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE RED STILLNESS // خطة الحرب النفسية</title>
+  <meta name="theme-color" content="#1B0C1A">
+  <meta name="description" content="خطة متكاملة للحرب النفسية تتكون من 33 استراتيجية لمدة 33 يوماً">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgZmlsbD0iIzFGMEMxQSIvPjx0ZXh0IHg9Ijk2IiB5PSIxMDAiIGZvbnQtc2l6ZT0iMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNGQURDMDUiIGZvbnQtZmFtaWx5PSJBcmlhbCI+5LiN5YiwPC90ZXh0Pjwvc3ZnPg==">
+  <style>
+    :root {
+      --dark-purple: #1B0C1A;
+      --dark-purple-2: #2D222F;
+      --medium-purple: #4B2138;
+      --red-purple: #6D3052;
+      --light-purple: #765067;
+      --gold: #FADC05;
+      --gold-hover: #ffeb3d;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: linear-gradient(135deg, var(--dark-purple) 0%, #0d0612 100%);
+      color: var(--gold);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+      position: relative;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(109, 48, 82, 0.1) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(250, 220, 5, 0.1) 0%, transparent 20%),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%232D222F" stroke-width="0.5" opacity="0.3"/></svg>');
+      z-index: -1;
+      opacity: 0.4;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-top: 20px;
+      position: relative;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--red-purple) 0%, var(--medium-purple) 100%);
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 15px rgba(250, 220, 5, 0.3);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    
+    .logo:hover {
+      transform: rotate(15deg) scale(1.1);
+    }
+    
+    .logo i {
+      font-size: 36px;
+      color: var(--gold);
+    }
+    
+    h1 {
+      font-size: 2.8rem;
+      color: var(--light-purple);
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      position: relative;
+      display: inline-block;
+    }
+    
+    h1::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 25%;
+      right: 25%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      border-radius: 50%;
+    }
+    
+    .subtitle {
+      color: var(--gold);
+      font-size: 1.2rem;
+      margin-top: 15px;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 15px auto 0;
+      line-height: 1.6;
+    }
+    
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    
+    .stat-box {
+      background: rgba(45, 34, 47, 0.7);
+      border: 1px solid var(--medium-purple);
+      border-radius: 10px;
+      padding: 15px 25px;
+      text-align: center;
+      min-width: 150px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .stat-box:hover {
+      transform: translateY(-5px);
+    }
+    
+    .stat-value {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--gold);
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--light-purple);
+      margin-top: 5px;
+    }
+    
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    
+    .control-btn {
+      background: transparent;
+      border: 1px solid var(--medium-purple);
+      color: var(--gold);
+      padding: 10px 25px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .control-btn:hover {
+      background: rgba(250, 220, 5, 0.1);
+      border-color: var(--gold);
+    }
+    
+    .control-btn.reset {
+      border-color: #ff6b6b;
+      color: #ff6b6b;
+    }
+    
+    .control-btn.reset:hover {
+      background: rgba(255, 107, 107, 0.1);
+    }
+    
+    .install-btn {
+      background: linear-gradient(135deg, var(--red-purple), var(--medium-purple));
+      border: none;
+      color: var(--gold);
+      padding: 12px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 15px auto;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .install-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .install-btn.hidden {
+      display: none;
+    }
+    
+    .filters {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0 25px;
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--medium-purple);
+      color: var(--gold);
+      padding: 8px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    }
+    
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--gold);
+      color: var(--dark-purple);
+      border-color: var(--gold);
+    }
+    
+    .days-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    
+    .day {
+      background: linear-gradient(145deg, rgba(45, 34, 47, 0.9), rgba(27, 12, 26, 0.9));
+      border: 1px solid var(--medium-purple);
+      border-radius: 15px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+    
+    .day:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(250, 220, 5, 0.2);
+      border-color: var(--gold);
+    }
+    
+    .day::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--red-purple), var(--light-purple));
+      opacity: 0.7;
+    }
+    
+    .day h2 {
+      margin: 0 0 15px;
+      color: var(--red-purple);
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    .day h2 .day-number {
+      background: var(--medium-purple);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      font-size: 1.2rem;
+      color: var(--gold);
+    }
+    
+    .strategy {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      min-height: 100px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .day button {
+      background: transparent;
+      border: 1px solid var(--medium-purple);
+      color: var(--gold);
+      padding: 8px 20px;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+    .day button:hover {
+      background: rgba(250, 220, 5, 0.1);
+      border-color: var(--gold);
+    }
+    
+    .day button.done {
+      background: var(--gold);
+      color: var(--dark-purple);
+      border-color: var(--gold);
+      font-weight: bold;
+    }
+    
+    .day button.done:hover {
+      background: var(--gold-hover);
+      border-color: var(--gold-hover);
+    }
+    
+    .progress {
+      height: 6px;
+      background: var(--dark-purple-2);
+      border-radius: 3px;
+      margin: 8px 0;
+      overflow: hidden;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--red-purple), var(--gold));
+      border-radius: 3px;
+    }
+    
+    .quote {
+      text-align: center;
+      margin: 40px 0;
+      padding: 25px;
+      background: rgba(45, 34, 47, 0.5);
+      border-radius: 15px;
+      border-left: 3px solid var(--gold);
+      border-right: 3px solid var(--gold);
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: var(--light-purple);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--medium-purple);
+    }
+    
+    .completed .strategy {
+      position: relative;
+    }
+    
+    .completed .strategy::after {
+      content: "✓";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 6rem;
+      color: rgba(250, 220, 5, 0.1);
+      z-index: 0;
+      font-weight: bold;
+    }
+    
+    .notification {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: rgba(45, 34, 47, 0.95);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 15px 25px;
+      color: var(--gold);
+      font-weight: bold;
+      transform: translateX(200%);
+      transition: transform 0.5s ease;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    
+    .notification.show {
+      transform: translateX(0);
+    }
+    
+    .offline-message {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(45, 34, 47, 0.95);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      padding: 10px 20px;
+      color: var(--gold);
+      z-index: 1000;
+      display: none;
+    }
+    
+    .offline-message.show {
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .days-container {
+        grid-template-columns: 1fr;
+      }
+      
+      h1 {
+        font-size: 2.2rem;
+      }
+      
+      .stats {
+        gap: 15px;
+      margin: 20px 0;
+      }
+      
+      .stat-box {
+        min-width: 120px;
+        padding: 12px 15px;
+      }
+      
+      .stat-value {
+        font-size: 2rem;
+      }
+      
+      .controls, .filters {
+        gap: 10px;
+      }
+      
+      .control-btn, .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+      }
+    }
+    
+    @media (display-mode: standalone) {
+      body {
+        padding-top: 40px;
+      }
+      
+      .install-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="notification" class="notification">
+      <i class="fas fa-check-circle"></i>
+      <span>تم حفظ تقدمك بنجاح!</span>
+    </div>
+    
+    <div id="offlineMessage" class="offline-message">
+      <i class="fas fa-wifi"></i> أنت الآن تعمل في وضع عدم الاتصال
+    </div>
+    
+    <header>
+      <div class="logo" id="resetBtn">
+        <i class="fas fa-crown"></i>
+      </div>
+      <h1>THE RED STILLNESS</h1>
+      <div class="subtitle">
+        خطة متكاملة للحرب النفسية تتكون من 33 استراتيجية لمدة 33 يوماً. 
+        كل يوم يمثل معركة جديدة في رحلتك نحو السيطرة والتحكم.
+      </div>
+      
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-value">33</div>
+          <div class="stat-label">استراتيجية</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="completedValue">0</div>
+          <div class="stat-label">مكتملة</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="remainingValue">33</div>
+          <div class="stat-label">متبقية</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="progressValue">0%</div>
+          <div class="stat-label">إنجاز</div>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <button class="control-btn" id="resetAllBtn">
+          <i class="fas fa-redo"></i>
+          تصفير جميع المكتملة
+        </button>
+        <button class="control-btn" id="saveBtn">
+          <i class="fas fa-save"></i>
+          حفظ التقدم يدويًا
+        </button>
+      </div>
+      
+      <button id="installButton" class="install-btn">
+        <i class="fas fa-download"></i>
+        تثبيت التطبيق على الجهاز
+      </button>
+      
+      <div class="filters">
+        <button class="filter-btn active">الكل</button>
+        <button class="filter-btn">المكتملة</button>
+        <button class="filter-btn">غير المكتملة</button>
+      </div>
+    </header>
+    
+    <div class="quote">
+      "الحرب النفسية هي فن تحويل الضعف إلى قوة، والفوضى إلى نظام، والخوف إلى سلاح"
+    </div>
+    
+    <div class="days-container" id="daysContainer">
+      <!-- سيتم توليد الأيام بواسطة الجافاسكريبت -->
+    </div>
+    
+    <footer>
+      <p>THE RED STILLNESS - خطة الحرب النفسية</p>
+      <p>جميع الحقوق محفوظة © 2023 | تم حفظ تقدمك تلقائيًا في هذا المتصفح</p>
+    </footer>
+  </div>
+  
+  <script>
+    // استراتيجيات الحرب النفسية
+    const strategies = [
+      "أعلن الحرب على نفسك",
+      "لا تدخل المعركة بدون خطة",
+      "سيطر على الفوضى",
+      "أظهر قوتك أولاً",
+      "اصنع جبهة داخلية قوية",
+      "قسّم لتسُد",
+      "اضرب من حيث لا يُتوقَّع",
+      "اجعل المعركة لا نهائية",
+      "اخلق حالة حرب دائمة",
+      "اعرف متى تنسحب",
+      "أبقِ خصمك في وضع دفاعي",
+      "أربك خصمك بشيء غير عقلاني",
+      "ادخل الحرب النفسية مبكرًا",
+      "تعلم كيف تسحق المقاومة",
+      "اجعل الهجوم دفاعك",
+      "حرّك الأتباع كجيش",
+      "اجعل خصمك ينفق طاقته بلا طائل",
+      "استخدم الخداع لصنع الهيبة",
+      "استدرج للمعركة في وقتك",
+      "حوّل الحرب إلى لعبة",
+      "كن سيد الوقت",
+      "اقتلهم بالهدوء",
+      "اعبر الجسر ثم دمّره",
+      "احرق كل طرق العودة",
+      "ارفع منسوب الخطر",
+      "استخدم خصمك ضد نفسه",
+      "حوّل الضعف إلى سلاح",
+      "اضرب أولاً — وبقسوة",
+      "اجعل المحيط يخدم المعركة",
+      "اقطع الرأس، وشلّ الباقي",
+      "ادفن الهزيمة داخل النصر",
+      "كن كالسائل، لا شكل لك",
+      "حوّل المعركة إلى تحول"
+    ];
+
+    // عناصر DOM
+    const daysContainer = document.getElementById('daysContainer');
+    const completedValue = document.getElementById('completedValue');
+    const remainingValue = document.getElementById('remainingValue');
+    const progressValue = document.getElementById('progressValue');
+    const resetAllBtn = document.getElementById('resetAllBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const notification = document.getElementById('notification');
+    const offlineMessage = document.getElementById('offlineMessage');
+    const installButton = document.getElementById('installButton');
+    
+    // متغيرات التطبيق
+    let deferredPrompt;
+    let completedDays = [];
+    let isOnline = navigator.onLine;
+    
+    // تسجيل Service Worker لتشغيل وضع عدم الاتصال
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => {
+            console.log('Service Worker registered:', reg);
+          })
+          .catch(err => {
+            console.log('Service Worker registration failed:', err);
+          });
+      });
+    }
+    
+    // متابعة حالة الاتصال
+    window.addEventListener('online', () => {
+      isOnline = true;
+      offlineMessage.classList.remove('show');
+    });
+    
+    window.addEventListener('offline', () => {
+      isOnline = false;
+      offlineMessage.classList.add('show');
+    });
+    
+    // استرجاع الحالة المحفوظة من localStorage
+    function loadState() {
+      const savedData = localStorage.getItem('warStrategyAppData');
+      if (savedData) {
+        try {
+          const data = JSON.parse(savedData);
+          completedDays = data.completedDays || [];
+        } catch (e) {
+          console.error('Error parsing saved data', e);
+        }
+      }
+    }
+    
+    // حفظ حالة التطبيق
+    function saveState() {
+      const data = {
+        completedDays: completedDays
+      };
+      localStorage.setItem('warStrategyAppData', JSON.stringify(data));
+    }
+    
+    // تحديث الإحصائيات
+    function updateStats() {
+      const completed = completedDays.length;
+      const total = strategies.length;
+      const remaining = total - completed;
+      const progress = Math.round((completed / total) * 100);
+      
+      completedValue.textContent = completed;
+      remainingValue.textContent = remaining;
+      progressValue.textContent = `${progress}%`;
+    }
+    
+    // دالة تبديل الحالة
+    function toggleComplete(button, dayNum) {
+      const dayElement = button.closest('.day');
+      const progressBar = dayElement.querySelector('.progress-bar');
+      
+      if (button.classList.contains('done')) {
+        button.classList.remove('done');
+        button.innerHTML = '<i class="fas fa-hourglass-half"></i> تمييز كمكتمل';
+        progressBar.style.width = '0%';
+        dayElement.classList.remove('completed');
+        
+        // إزالة اليوم من المكتملة
+        completedDays = completedDays.filter(d => d !== dayNum);
+      } else {
+        button.classList.add('done');
+        button.innerHTML = '<i class="fas fa-check-circle"></i> تم التطبيق';
+        progressBar.style.width = '100%';
+        dayElement.classList.add('completed');
+        
+        // إضافة اليوم للمكتملة
+        if (!completedDays.includes(dayNum)) {
+          completedDays.push(dayNum);
+        }
+      }
+      
+      // حفظ الحالة
+      saveState();
+      updateStats();
+      showNotification('تم تحديث حالة اليوم بنجاح!');
+    }
+    
+    // دالة تصفير جميع المكتملة
+    function resetAllCompleted() {
+      // تأكيد من المستخدم
+      if (!confirm('هل أنت متأكد أنك تريد تصفير جميع الأيام المكتملة؟')) {
+        return;
+      }
+      
+      completedDays = [];
+      saveState();
+      
+      // تحديث جميع الأزرار
+      document.querySelectorAll('.day button').forEach(btn => {
+        if (btn.classList.contains('done')) {
+          btn.classList.remove('done');
+          btn.innerHTML = '<i class="fas fa-hourglass-half"></i> تمييز كمكتمل';
+        }
+      });
+      
+      // تحديث جميع شريط التقدم
+      document.querySelectorAll('.progress-bar').forEach(bar => {
+        bar.style.width = '0%';
+      });
+      
+      // تحديث فئة completed
+      document.querySelectorAll('.day').forEach(day => {
+        day.classList.remove('completed');
+      });
+      
+      updateStats();
+      showNotification('تم تصفير جميع الأيام بنجاح!');
+    }
+    
+    // دالة إظهار الإشعار
+    function showNotification(message) {
+      notification.querySelector('span').textContent = message;
+      notification.classList.add('show');
+      
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 3000);
+    }
+    
+    // توليد عناصر الأيام
+    function generateDays() {
+      daysContainer.innerHTML = '';
+      
+      strategies.forEach((strategy, index) => {
+        const dayNum = index + 1;
+        const isCompleted = completedDays.includes(dayNum);
+        
+        const dayElement = document.createElement('div');
+        dayElement.className = `day ${isCompleted ? 'completed' : ''}`;
+        dayElement.innerHTML = `
+          <h2><span class="day-number">${dayNum}</span> اليوم</h2>
+          <div class="strategy">${strategy}</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: ${isCompleted ? '100%' : '0%'}"></div>
+          </div>
+          <button onclick="toggleComplete(this, ${dayNum})" ${isCompleted ? 'class="done"' : ''}>
+            <i class="fas fa-${isCompleted ? 'check-circle' : 'hourglass-half'}"></i>
+            ${isCompleted ? 'تم التطبيق' : 'تمييز كمكتمل'}
+          </button>
+        `;
+        
+        daysContainer.appendChild(dayElement);
+      });
+      
+      // تهيئة العناصر للرسوم المتحركة
+      document.querySelectorAll('.day').forEach(day => {
+        day.style.opacity = '0';
+        day.style.transform = 'translateY(20px)';
+        day.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      });
+      
+      setTimeout(() => {
+        window.dispatchEvent(new Event('scroll'));
+      }, 300);
+    }
+    
+    // إضافة فلترة للأيام
+    function setupFilters() {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filter = btn.textContent;
+          const days = document.querySelectorAll('.day');
+          
+          days.forEach(day => {
+            const isCompleted = day.querySelector('button').classList.contains('done');
+            
+            if (filter === 'الكل') {
+              day.style.display = 'block';
+            } else if (filter === 'المكتملة' && isCompleted) {
+              day.style.display = 'block';
+            } else if (filter === 'المكتملة' && !isCompleted) {
+              day.style.display = 'none';
+            } else if (filter === 'غير المكتملة' && !isCompleted) {
+              day.style.display = 'block';
+            } else if (filter === 'غير المكتملة' && isCompleted) {
+              day.style.display = 'none';
+            }
+          });
+        });
+      });
+    }
+    
+    // تهيئة أحداث التمرير
+    function setupScrollAnimations() {
+      window.addEventListener('scroll', () => {
+        const days = document.querySelectorAll('.day');
+        const scrollPosition = window.scrollY;
+        
+        days.forEach((day, index) => {
+          const dayPosition = day.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          
+          if (dayPosition < screenPosition) {
+            setTimeout(() => {
+              day.style.opacity = '1';
+              day.style.transform = 'translateY(0)';
+            }, index * 100);
+          }
+        });
+      });
+    }
+    
+    // تهيئة تثبيت PWA
+    function setupPWAInstall() {
+      window.addEventListener('beforeinstallprompt', (e) => {
+        // منع المتصفح من عرض تثبيت PWA تلقائيًا
+        e.preventDefault();
+        // حفظ الحدث لاستخدامه لاحقًا
+        deferredPrompt = e;
+        // إظهار زر التثبيت
+        installButton.classList.remove('hidden');
+      });
+      
+      installButton.addEventListener('click', () => {
+        if (!deferredPrompt) return;
+        
+        // عرض نافذة التثبيت
+        deferredPrompt.prompt();
+        
+        // انتظار اختيار المستخدم
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === 'accepted') {
+            console.log('User accepted the install prompt');
+            installButton.classList.add('hidden');
+          } else {
+            console.log('User dismissed the install prompt');
+          }
+          deferredPrompt = null;
+        });
+      });
+    }
+    
+    // تهيئة التطبيق
+    function initApp() {
+      loadState();
+      generateDays();
+      updateStats();
+      setupFilters();
+      setupScrollAnimations();
+      setupPWAInstall();
+      
+      // أحداث الأزرار
+      resetAllBtn.addEventListener('click', resetAllCompleted);
+      resetBtn.addEventListener('click', resetAllCompleted);
+      saveBtn.addEventListener('click', () => {
+        saveState();
+        showNotification('تم حفظ تقدمك بنجاح!');
+      });
+      
+      // إخفاء زر التثبيت إذا كان التطبيق مثبتًا بالفعل
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        installButton.classList.add('hidden');
+      }
+    }
+    
+    // بدء تشغيل التطبيق
+    document.addEventListener('DOMContentLoaded', initApp);
+  </script>
+</body>
+</html>
