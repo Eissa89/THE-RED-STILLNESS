@@ -2,8 +2,8 @@
 const CACHE_NAME = 'red-stillness-v1';
 const urlsToCache = [
   '/',
-  'index.html',
-  'manifest.json',
+  '/index.html',
+  '/manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
   // يمكنك إضافة أي أصول أخرى هنا
 ];
